@@ -1,0 +1,1275 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* My Code */
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #f3f3f3;
+}
+
+p {
+    color: #111;
+}
+
+main{
+  /*padding-top: 100px; */
+}
+
+header{
+   /* position: fixed; */
+   
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #EFECC5;
+    width: 100%;
+    height: 100px;
+   
+}
+
+
+header .header-brand{
+    font-family: Catamaran;
+    font-size: 24px;
+    font-weight: 900;
+    color: #1C8789;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0px ;
+}
+
+header .header-brand:hover{
+  
+    color: #d14b16;
+   
+}
+
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li{
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0 16px;
+}
+
+header nav ul li a{
+    font-family: Catamaran;
+    font-size: 16px;
+    color: #1C8789;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover{
+    font-family: Catamaran;
+    font-size: 16px;
+    color: #D14B16;
+    text-transform: uppercase;
+}
+
+
+header .header-cases{
+    display: none;
+}
+
+@media only screen and (min-width: 1000px){
+    header .header-brand{
+        margin: 31px 0 ;
+        text-align: left;
+        line-height: 38px;
+        padding: 0px 20px 0px 40px ;
+        border-right: 3px solid #1C8789;
+        float: left;
+    }
+
+    header nav ul {
+        margin: 20px 0px 0px 20px;
+        float: left;
+    }
+    
+    
+    header nav ul li a{
+        line-height: 60px;
+    }
+
+    header .header-cases{
+        display: block;
+        font-family: Catamaran;
+        font-size: 16px;
+        color: #1C8789;
+        text-transform: uppercase;
+        line-height: 38px;
+        border: 1px solid #1C8789;
+        float: right;
+        margin-right: 40px;
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+    header .header-cases:hover{
+        
+        color: #D14B16;
+        
+    }
+
+
+}
+
+/* Index */
+
+.index-banner{
+    width: 100%;
+    height: /*calc(100vh - 100px)*/ 75vh;
+    background-image: url(img/300ppi/Banner\ HD.png);
+    
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+/*
+.vertical-center{
+    /* vamos a usar tablas y celdas para centrar 
+    display: table-cell;
+    vertical-align: middle ;
+} 
+*/
+.index-banner h2{
+    font-family: Catamaran;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 70px;
+    color: #1C8789;
+    text-align: center;
+    padding-top: 20px;
+   /* text-shadow: 2px 2px 8px #111;*/
+
+}
+
+.index-banner-2 h1{
+    font-family:  Cormorant Garamond;
+    font-size: 28px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 40px;
+    color: #1C8789;
+    text-align: center;
+    padding: 50px;
+    /*text-shadow: 2px 2px 8px #111;*/
+
+}
+.index-banner-2{
+    background-image: url(img/300ppi/Banner\ cremita.png);
+}
+
+
+.index-links div {
+    margin: 16px 16px 0;
+    width: calc(100% - 32px);
+    height: 100px;
+   
+    background-color: #fff;
+
+}
+
+.index-links div h3 {
+    font-family:  Catamaran ;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 100px;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+@media only screen and (min-width: 1000px){
+    .wrapper{
+        /*width: 1000px;*/
+        margin: 0 auto;
+
+    }
+
+    .index-banner{
+        height: 450px;
+      
+    } 
+
+    .index-banner h2{
+        padding-top: 70px;
+    }
+    
+    .index-banner-2 h1{
+        display: block;
+        width: 560px;
+       margin: 0 auto;
+        
+    
+    }
+
+    .index-links {
+        overflow: hidden;
+        
+    }
+
+
+    .index-links div{
+        margin: 20px 10px 0;
+        height: 230px;
+        
+        background-color: #fff;
+        float: left;
+    }
+
+    .index-boxlink-square{
+        width: calc(25% - 20px) !important;
+    }
+
+    .index-boxlink-rectangle{
+        width: calc(50% - 20px) !important;
+    }
+
+    .index-links div h3 {
+        line-height: 230px;
+    }
+}
+
+
+
+
+
+/* cases */
+
+/*.gallery-general{
+    padding-top: 100px;
+}*/
+
+
+
+
+.cases-links {
+  overflow: hidden;
+  margin-bottom: 20px;
+
+}
+
+.cases-links h2{
+    font-family:  Catamaran ;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1C8789;
+    text-transform: uppercase;
+  }
+
+
+.cases-links .cases-link{
+    float: left;
+    width: 230px;
+    height: 230px;
+    margin: 20px 10px 0px;
+    background-color: #e3e3e3;
+}
+
+.cases-links .cases-link p{
+    padding-top: 45%;
+    font-family:  Catamaran ;
+    font-size: 24px;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+
+  }
+
+/*  CASE */
+
+
+/* ABOUT ME */
+
+.index-about{
+    background-color: #DDD8AB;
+    height: auto;
+}
+
+.index-about img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 60px;
+}
+
+
+.index-about h2{
+    font-family: Catamaran;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 70px;
+    color: #1C8789;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.index-about  h4{
+    font-family:  Catamaran ;
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 40px ;
+    padding-bottom: 30px;
+    line-height: 24px;
+    color: #1C8789;
+    text-transform: uppercase;
+    margin: 0 30px 0 30px;
+    column-gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.index-about h3{
+    font-family:  Catamaran ;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1C8789;
+    text-transform: uppercase;
+   padding-bottom: 20px;
+    text-align: center;
+}
+
+.index-about p{
+    font-family:  Catamaran ;
+    font-size: 16px;
+    font-weight: 600;
+   
+    padding-bottom: 80px;
+    line-height: 24px;
+    color: #1C8789;
+    text-transform: uppercase;
+    /*column-count: 3;*/
+    margin: 0 30px 0 30px;
+    
+    column-gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-video {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    
+    
+  }
+
+
+  .about-column2{
+    
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .about {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  @media only screen and (min-width: 762px){
+
+    .index-about h4{
+        margin-top: 50px;
+    }
+
+    .about{
+        padding-top: 20px ;
+        padding-bottom: 50px;
+    }
+
+
+    .index-about p{
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+       
+    }
+
+    .about-columns{
+        margin: 0 auto;
+        width: 80%;
+        display: flow-root;
+    }
+
+    .about-column1{
+        float: right;
+        width: 46%;
+    }
+
+
+    .about-column2{
+       float: left;
+       width: 46%;
+    } 
+}
+
+
+/* MANIJAS */
+.index-gorelax{
+    background-color: #DDD8AB;
+    height: auto;
+}
+
+.index-gorelax h2{
+    font-family: Catamaran;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 70px;
+    color: #1C8789;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.index-gorelax  h4{
+    font-family:  Catamaran ;
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 40px ;
+    padding-bottom: 30px;
+    line-height: 24px;
+    color: #1C8789;
+    text-transform: uppercase;
+    margin: 0 30px 0 30px;
+    column-gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.index-gorelax h3{
+    font-family:  Catamaran ;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1C8789;
+    text-transform: uppercase;
+   padding-bottom: 20px;
+    text-align: center;
+}
+
+
+.index-gorelax p{
+    font-family:  Catamaran ;
+    font-size: 16px;
+    font-weight: 600;
+   
+    padding-bottom: 40px;
+    line-height: 24px;
+    color: #1C8789;
+    text-transform: uppercase;
+    /*column-count: 3;*/
+    margin: 0 30px 0 30px;
+    
+    column-gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.gorelax-video {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .manijas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+@media only screen and (min-width: 762px){
+
+    .index-gorelax  h4{
+     
+        margin-top: 20px;
+    
+
+    }
+
+    .manijas{
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .index-gorelax p{
+        width: 90%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .gorelax-columns{
+        margin: 0 auto;
+        width: 80%;
+        display: flow-root;
+    }
+
+    .gorelax-column1{
+        float: right;
+        width: 50%;
+    }
+
+
+    .gorelax-column2{
+       float: left;
+       width: 50%;
+    }
+}
+
+/* ver mas boton */
+
+
+
+.ver-mas{
+    
+    font-family: Catamaran;
+    font-size: 16px;
+    color: #1C8789;
+    text-transform: uppercase;
+    line-height: 38px;
+    border: 1px solid #1C8789;
+    float: right;
+    
+   margin-right: 140px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.ver-mas:hover{
+    
+    color: #D14B16;
+    
+}
+
+
+@media only screen and (min-width: 762px){
+
+    .ver-mas{
+        display: block;
+        font-family: Catamaran;
+        font-size: 16px;
+        color: #1C8789;
+        text-transform: uppercase;
+        line-height: 38px;
+        border: 1px solid #1C8789;
+        float: right;
+        margin-right: 180px;
+        margin-bottom: 30px;
+        padding: 0 20px;
+    }
+    
+    .ver-mas:hover{
+        
+        color: #D14B16;
+        
+    }
+
+}
+
+
+/* eclipse */
+
+
+.index-eclipse{
+    background-color: #EFECC5;
+    height: auto;
+}
+
+.index-eclipse h2{
+    font-family: Catamaran;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 70px;
+    color: #1C8789;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.eclipse-column2 h4{
+    font-family:  Catamaran ;
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 40px ;
+    padding-bottom: 30px;
+    line-height: 24px;
+    color: #1C8789;
+    text-transform: uppercase;
+    margin: 0 30px 0 30px;
+    column-gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.index-eclipse h3{
+    font-family:  Catamaran ;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1C8789;
+    text-transform: uppercase;
+   padding-bottom: 20px;
+    text-align: center;
+}
+
+.index-eclipse p{
+    font-family:  Catamaran ;
+    font-size: 16px;
+    font-weight: 600;
+   
+    padding-bottom: 40px;
+    line-height: 24px;
+    color: #1C8789;
+    text-transform: uppercase;
+    /*column-count: 3;*/
+    margin: 0 30px 0 30px;
+    
+    column-gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.eclipse-video {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .eclipse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+@media only screen and (min-width: 762px){
+
+    .index-eclipse  h4{
+     
+        margin-top: 20px;
+    
+
+    }
+
+    .eclipse{
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .index-eclipse p{
+        width: 90%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .eclipse-columns{
+        margin: 0 auto;
+        width: 80%;
+        display: flow-root;
+    }
+
+    .eclipse-column1{
+        float: left;
+        width: 50%;
+    }
+
+
+    .eclipse-column2{
+       float: right;
+       width: 50%;
+    }
+}
+
+
+/* DALCA */
+
+/* NATURAL TRAINING */
+.index-natural{
+    background-color: #EFECC5;
+    height: auto;
+}
+.index-natural h2{
+    font-family: Catamaran;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 70px;
+    color: #1C8789;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.index-natural  h4{
+    font-family:  Catamaran ;
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 40px ;
+    padding-bottom: 30px;
+    line-height: 24px;
+    color: #1C8789;
+    text-transform: uppercase;
+    margin: 0 30px 0 30px;
+    column-gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.index-natural h3{
+    font-family:  Catamaran ;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1C8789;
+    text-transform: uppercase;
+   padding-bottom: 20px;
+    text-align: center;
+}
+
+.index-natural p{
+    font-family:  Catamaran ;
+    font-size: 16px;
+    font-weight: 600;
+   
+    padding-bottom: 40px;
+    line-height: 24px;
+    color: #1C8789;
+    text-transform: uppercase;
+    /*column-count: 3;*/
+    margin: 0 30px 0 30px;
+    
+    column-gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.natural-video {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .natural {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  @media only screen and (min-width: 762px){
+
+    .index-natural  h4{
+     
+        margin-top: 20px;
+    
+
+    }
+
+    .natural{
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .index-natural p{
+        width: 90%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .natural-columns{
+        margin: 0 auto;
+        width: 80%;
+        display: flow-root;
+    }
+
+    .natural-column1{
+        float: left;
+        width: 50%;
+    }
+
+
+    .natural-column2{
+       float: right;
+       width: 50%;
+    }
+}
+
+
+/* aavla */
+
+.index-aavla{
+    background-color: #DDD8AB;
+    height: auto;
+}
+
+.index-aavla h2{
+    font-family: Catamaran;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 70px;
+    color: #1C8789;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.index-aavla  h4{
+    font-family:  Catamaran ;
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 40px ;
+    padding-bottom: 30px;
+    line-height: 24px;
+    color: #1C8789;
+    text-transform: uppercase;
+    margin: 0 30px 0 30px;
+    column-gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.index-aavla h3{
+    font-family:  Catamaran ;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1C8789;
+    text-transform: uppercase;
+   padding-bottom: 20px;
+    text-align: center;
+}
+
+.index-aavla p{
+    font-family:  Catamaran ;
+    font-size: 16px;
+    font-weight: 600;
+   
+    padding-bottom: 40px;
+    line-height: 24px;
+    color: #1C8789;
+    text-transform: uppercase;
+    /*column-count: 3;*/
+    margin: 0 30px 0 30px;
+    
+    column-gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.aavla-video {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .aavla {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+@media only screen and (min-width: 762px){
+
+    .index-aavla  h4{
+     
+        margin-top: 20px;
+    
+
+    }
+
+    .aavla{
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .index-aavla p{
+        width: 90%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .aavla-columns{
+        margin: 0 auto;
+        width: 80%;
+        display: flow-root;
+    }
+
+    .aavla-column1{
+        float: right;
+        width: 50%;
+    }
+
+
+    .aavla-column2{
+       float: left;
+       width: 50%;
+    }
+}
+
+/* Motion Graphics */
+
+
+.index-motion{
+    background-color: #EFECC5;
+    height: auto;
+}
+
+.index-motion img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.index-motion h2{
+    font-family: Catamaran;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 70px;
+    color: #1C8789;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.index-motion  h4{
+    font-family:  Catamaran ;
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 40px ;
+    padding-bottom: 30px;
+    line-height: 24px;
+    color: #1C8789;
+    text-transform: uppercase;
+    margin: 0 30px 0 30px;
+    column-gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.index-motion h3{
+    font-family:  Catamaran ;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1C8789;
+    text-transform: uppercase;
+   padding-bottom: 20px;
+    text-align: center;
+}
+
+.index-motion p{
+    font-family:  Catamaran ;
+    font-size: 16px;
+    font-weight: 600;
+   
+    padding-bottom: 40px;
+    line-height: 24px;
+    color: #1C8789;
+    text-transform: uppercase;
+    /*column-count: 3;*/
+    margin: 0 30px 0 30px;
+    
+    column-gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.motion-video {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .motion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  @media only screen and (min-width: 762px){
+
+    .index-motion h4{
+        margin-top: 50px;
+    }
+
+    .motion{
+        padding-top: 20px ;
+        padding-bottom: 50px;
+    }
+
+
+    .index-motion p{
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+       
+    }
+
+    .motion-columns{
+        margin: 0 auto;
+        width: 80%;
+        display: flow-root;
+    }
+
+    .motion-column1{
+        float: right;
+        width: 46%;
+    }
+
+
+    .motion-column2{
+       float: left;
+       width: 46%;
+    } 
+}
+
+/* GALLERY */
+.gallery-links-h2 {
+    font-family:  Catamaran ;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.gallery-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+.gallery-img {
+    flex-basis: 90%;
+    margin: 10px;
+}
+
+
+.gallery-img img{
+    flex-basis: 23%;
+    margin: 20px;
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 762px) {
+    .gallery-links-h2{
+        font-size: 20px;
+    }
+
+    .gallery-img {
+        flex-basis: 300px;
+    }
+    
+}
+
+/* CONTACT */
+
+form{
+    width: 300px;
+
+}
+
+input{
+    width: 100%;
+    
+}
+
+textarea{
+    resize: vertical;
+    max-height: 100px;
+}
+
+input, textarea{
+    outline: none;
+    border: 1px solid #ddd;
+
+}
+
+input:focus, textarea:focus{
+    box-shadow: 0 0 4px rgba(255, 0, 0, 0.5);
+    border: 1px solid #ddd;
+
+}
+
+::placeholder {
+    color: red;
+    opacity: 1;
+}
+:-ms-iinput-placeholder {
+    color: red;
+    opacity: 1;
+}
+::-ms-iinput-placeholder  {
+    color: red;
+    opacity: 1;
+}
+
+/* Footer */
+
+footer{
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    margin-top: 20px ;
+    background-color: #EFECC5;
+    overflow: hidden;
+}
+
+footer ul{
+ width: fit-content;
+ float: left;
+ padding-left: 20px;
+
+}
+footer ul li{
+    display: block;
+    list-style: none;   
+
+   }
+
+footer ul li a{
+  font-family: Catamaran;
+  font-size: 16px;
+  color: #1C8789;
+  line-height: 40px;
+
+   }
+
+.footer-links-cases{
+    display: none;
+}
+
+.footer-sm{
+    width: 50px;
+    float: right;
+
+}
+
+.footer-sm img{
+    width: 100%;
+    margin-bottom: 10px;    
+}
+
+@media only screen and (min-width: 1000px){
+    .footer-links-cases{
+        display: block;
+    }
+
+    footer ul li{
+         
+        padding-right: 30px;
+    
+       }
+    
+
+    footer ul li p{
+        font-family: Catamaran;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #1C8789;
+        line-height: 40px;
+      
+         }
+    
+}
